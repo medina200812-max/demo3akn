@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Single-page design portfolio</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        width: 1200px;
+        background-color: antiquewhite;
+        min-height: 100vh;
+      }
+      .container {
+        background-color: white;
+        margin-left: 250px;
+        padding: 40px;
+        overflow: hidden;
+        height: 1300px;
+      }
+      .logo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+      }
+      .types {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(1fr 1fr);
+        width: 900px;
+        height: 200px;
+        gap: 10px;
+        margin-left: 50px;
+      }
+      .box1 {
+        background-color: rgb(138, 88, 255);
+        display: grid;
+        grid-column: 1/3;
+        grid-row: 1/3;
+        border-radius: 5px;
+      }
+      .box2 {
+        background-color: rgb(255, 180, 110);
+        display: grid;
+        grid-column: 3/4;
+        grid-row: 1/2;
+        border-radius: 5px;
+      }
+      .box3 {
+        background-color: rgb(255, 157, 155);
+        display: grid;
+        grid-column: 4/5;
+        grid-row: 1/2;
+        border-radius: 5px;
+      }
+      .box4 {
+        background-color: rgb(88, 168, 164);
+        display: grid;
+        grid-column: 5/7;
+        grid-row: 1/2;
+        border-radius: 5px;
+      }
+      .box5 {
+        background-color: rgb(253, 126, 137);
+        display: grid;
+        grid-column: 3/5;
+        grid-row: 2/3;
+        border-radius: 5px;
+      }
+      .box6 {
+        background-color: rgb(78, 24, 67);
+        display: grid;
+        grid-column: 5/7;
+        grid-row: 2/3;
+        border-radius: 5px;
+      }
+      .profile {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        width: 650px;
+        margin-left: 120px;
+        margin-top: 50px;
+      }
+      button {
+        background-color: rgb(228, 128, 126);
+        width: 150px;
+        border: none;
+        border-radius: 20px;
+        height: 30px;
+        color: white;
+      }
+      h6 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 17px;
+      }
+      .mywork {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        margin-left: -150px;
+        gap: 15px;
+      }
+      .mywork img {
+        width: 400px;
+        border-radius: 10px;
+      }
+      h6 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 17px;
+      }
+      .arrow {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        margin-top: 20px;
+      }
+      .left {
+        background-image: url(./assets/icon-arrow-left.svg);
+      }
+      .right {
+        background-image: url(./assets/icon-arrow-right.svg);
+      }
+      .last {
+        background-color: black;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        color: white;
+        padding: 50px;
+        font-size: 9px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 500px;
+        margin-left: 120px;
+        border-radius: 10px;
+        gap: 50px;
+        margin-top: 50px;
+      }
+      .last button {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img
+          style="width: 30px; height: 30px; margin-top: -20px"
+          src="./assets/logo.svg"
+          alt=""
+        />
+        <p
+          style="
+            background-color: black;
+            color: white;
+            width: 150px;
+            text-align: center;
+            border-radius: 20px;
+            padding-top: 7px;
+            margin-top: -25px;
+            margin-left: 250px;
+            font-size: 12px;
+          "
+        >
+          Free Consultation
+        </p>
+      </div>
+      <h2
+        style="
+          font-size: 20px;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          text-align: center;
+        "
+      >
+        Design solutions made easy
+      </h2>
+      <p
+        style="
+          font-size: 12px;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          text-align: center;
+          opacity: 0.6;
+          width: 400px;
+          margin-left: 220px;
+          padding: 20px;
+        "
+      >
+        With over ten years of experience in various design disciplines, I’m
+        your one-stop shop for your design needs.
+      </p>
+
+      <div class="types">
+        <div class="box1">
+          <img
+            style="width: 75px; margin-left: 170px; margin-top: 5px"
+            src="./assets/pattern-graphic-design.svg"
+            alt=""
+          />
+          <p
+            style="
+              color: white;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              font-size: 13px;
+              margin-left: 10px;
+              margin-bottom: -30px;
+            "
+          >
+            Graphic Design
+          </p>
+        </div>
+        <div class="box2">
+          <img
+            style="
+              width: 40px;
+              height: 40px;
+              padding: 0;
+              margin-top: 10px;
+              margin-left: 70px;
+            "
+            src="./assets/pattern-ui-ux.svg"
+            alt=""
+          />
+          <p
+            style="
+              color: white;
+              padding: 0;
+              font-size: 12px;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              margin-bottom: -3px;
+              margin-left: 10px;
+            "
+          >
+            UI/UX
+          </p>
+        </div>
+        <div class="box3">
+          <img
+            style="width: 40px; margin-left: 75px; margin-top: 5px"
+            src="./assets/pattern-apps.svg"
+            alt=""
+          />
+          <p
+            style="
+              color: white;
+              padding: 0;
+              font-size: 12px;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              margin-bottom: -15px;
+              margin-left: 10px;
+            "
+          >
+            Apps
+          </p>
+        </div>
+        <div class="box4">
+          <img
+            style="width: 80px; margin-left: 163px; margin-top: 5px"
+            src="./assets/pattern-photography.svg"
+            alt=""
+          />
+          <p
+            style="
+              color: white;
+              padding: 0;
+              font-size: 12px;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              margin-bottom: -7px;
+              margin-left: 10px;
+            "
+          >
+            Photography
+          </p>
+        </div>
+        <div class="box5">
+          <img
+            style="width: 80px; margin-left: 163px; margin-top: 5px"
+            src="./assets/pattern-illustrations.svg"
+            alt=""
+          />
+          <p
+            style="
+              color: white;
+              padding: 0;
+              font-size: 12px;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              margin-bottom: -7px;
+              margin-left: 10px;
+            "
+          >
+            illustrations
+          </p>
+        </div>
+        <div class="box6">
+          <img
+            style="width: 80px; margin-left: 163px; margin-top: 5px"
+            src="./assets/pattern-motion-graphics.svg"
+            alt=""
+          />
+          <p
+            style="
+              color: white;
+              padding: 0;
+              font-size: 12px;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              margin-bottom: -7px;
+              margin-left: 10px;
+            "
+          >
+            Motion Graphics
+          </p>
+        </div>
+      </div>
+
+      <div class="profile">
+        <div class="amy">
+          <img
+            style="width: 260px; height: 260px"
+            src="./assets/image-amy.webp"
+            alt=""
+          />
+        </div>
+        <div class="textamy">
+          <h6>I’m Amy, and I’d love to work on your next project</h6>
+          <p
+            style="
+              font-size: 11px;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              opacity: 0.5;
+              margin-top: -10px;
+            "
+          >
+            I love working with others to create beautiful design solutions.
+            I’ve designed everything from brand illustrations to complete mobile
+            apps. I’m also handy with a camera!
+          </p>
+          <button>Free Consultation</button>
+        </div>
+      </div>
+      <h6 style="margin-top: 30px; margin-left: 400px">My work</h6>
+      <div class="mywork">
+        <div class="photo1">
+          <img src="./assets/image-slide-2.jpg" alt="" />
+        </div>
+        <div class="photo2">
+          <img src="./assets/image-slide-3.jpg" alt="" />
+        </div>
+        <div class="photo3">
+          <img src="./assets/image-slide-4.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="arrow">
+        <div class="left">
+          <img src="./assets/icon-arrow-left.svg" alt="" />
+        </div>
+        <div class="right">
+          <img src="./assets/icon-arrow-right.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="last">
+        <p>
+          I’d love to have a chat to see how I can help you. The best first step
+          is for us to discuss your project during a free consultation. Then we
+          can move forward from there.
+        </p>
+        <button>Free Consultation</button>
+      </div>
+    </div>
+  </body>
+</html>
